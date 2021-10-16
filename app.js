@@ -72,6 +72,7 @@ app.post("/login",passport.authenticate("local",{
     failureRedirect:"/login"
 }),function (req, res){
 });
+
 app.get("/register",(req,res)=>{
     res.render("register");
 });
